@@ -1,0 +1,76 @@
+/* General styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('timeline.JPG'); /* Add your background image URL here */
+    background-size: cover; /* Scale the image to cover the entire page */
+    background-position: center; /* Center the image */
+    color: #333; /* Default font color for the page */
+}
+
+/* Styling for the main timeline container */
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #999; /* Add a border to the timeline container */
+    border-radius: 15px; /* Rounded corners for the timeline container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the timeline container */
+}
+
+/* Styling for individual timeline events */
+.event {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border: 2px solid #333; /* Add a border to each event */
+    border-radius: 10px; /* Rounded corners for events */
+    background-image: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Gradient background for events */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the year label on each event */
+.year {
+    width: 10%;
+    text-align: center; /* Center-align the year */
+    font-weight: bold;
+    background-color: #ff5733; /* Fun red background color */
+    color: #fff; /* White font color */
+    border-top-left-radius: 10px; /* Rounded top-left corner for year */
+    border-bottom-left-radius: 10px; /* Rounded bottom-left corner for year */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow to the year label */
+}
+
+/* Styling for the event description */
+.event-description {
+    flex-grow: 1;
+    background-color: #fff; /* White background for description */
+    padding: 15px;
+    border-top-right-radius: 10px; /* Rounded top-right corner for description */
+    border-bottom-right-radius: 10px; /* Rounded bottom-right corner for description */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow to the description */
+    color: #333; /* Dark gray font color */
+    line-height: 1.5; /* Increase line height for better readability */
+}
+
+/* Styling for odd-numbered events */
+.event:nth-child(odd) {
+    background-color: #ffc107; /* Yellow background for odd events */
+}
+
+/* Styling for even-numbered events */
+.event:nth-child(even) {
+    background-color: #2196F3; /* Blue background for even events */
+    color: #fff; /* White font color for even events */
+}
+
+/* Styling for the name and section information */
+.name-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom, #333, #444); /* Gradient background for section */
+    color: #fff; /* White font color for section */
+    font-weight: bold;
+    border-top-left-radius: 10px; /* Rounded top-left corner for section */
+    border-top-right-radius: 10px; /* Rounded top-right corner for section */
+}
